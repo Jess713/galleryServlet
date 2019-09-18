@@ -1,0 +1,24 @@
+<html>
+<style>
+    button {
+        margin: 10px;
+    }
+</style>
+<script type="text/JavaScript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script type='text/javascript' src='./script.js'></script>
+
+<body>
+    <form action="assign01" method="POST">
+        <h2>Type new username and password!</h2>
+        new Username: <input id="sign-up-user-name" name="sign-up-user-name" type="text" required><br />
+        new password: <input id="sign-up-psw" name="sign-up-psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+        <p>no need to type out password twice for now, so be careful!</p>
+        <!-- <button type="submit">Sign up</button> -->
+        <button>Sign up</button>
+        <button type="button" id="mainPage">Back</button>
+    </form>
+</body>
+
+</html>

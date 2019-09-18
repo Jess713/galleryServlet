@@ -1,0 +1,27 @@
+<html>
+<meta charset='UTF-8'>
+<script type='text/javascript' src='./script.js'></script>
+
+<body>
+    <h2> You are logged in as: + userId.toUpperCase() + </h2>
+
+    <img id='changeImg' src='./images/default.jpg' alt='default-image' height='150' width='150'>
+    <br>
+    <div class='detail'>
+        <h3>caption: <span id='caption'>N/A</span></h3>
+        <h3>date: <span id='date'>N/A</span></h3>
+    </div>
+    <br>
+    <div class='button'>
+        <button onClick='loadDoc(this.id)' class='button' type='button' id='prev'>Prev</button>
+        <button onClick='loadDoc(this.id)' class='button' type='button' id='auto'>Auto</button>
+        <button onClick='loadDoc(this.id)' class='button' type='button' id='next'>Next</button>
+    </div><br>
+    <form action='assign01-2' method='POST' enctype='multipart/form-data'>
+        Select a file: <input type='file' name='file' required><br><br>
+        <button id='upload'>UPLOAD FILE</button></form><br>
+    <h2>Current files belong to this user..</h2>
+    <p id='photos'> + Arrays.toString(fileNameList.toArray()) + </p>
+</body>
+
+</html>

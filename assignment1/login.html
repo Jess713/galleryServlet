@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <form action="assign01" method="GET">
+        Username: <input id="userId" name="userId" type="text" required><br />
+        password: <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more characters"
+            required>
+
+        <button id="sign-in" type="submit">Sign in</button>
+        <button id="sign-up" type="button" onclick="signup()">Sign up</button>
+    </form>
+</body>
+<script>
+    function signup() {
+        window.location = "./signup.html";
+
+    }
+</script>
+
+</html>
